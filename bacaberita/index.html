@@ -1,0 +1,93 @@
+<!--
+Copyright 2018 Google Inc.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Set character encoding -->
+  <meta charset="utf-8">
+  <!-- Set the viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <!-- Set title -->
+  <title>Berita</title>
+  <!-- Request styles -->
+  <link rel="stylesheet" href="/style/main.css" />
+</head>
+<body>
+  <header>
+    <h1>Berita Gadget</h1>
+	<br/>
+  </header>
+  <main>
+    <div class="img-container">
+      <!-- image is CC0 - no attribution required https://unsplash.com/photos/w9tHZ5fi3e4 -->
+      <img src="/images/hpone.jpg" alt="OnePlus">
+    </div>
+    <h2></h2>
+    <p>
+	Meski brand smartphone OnePlus tidak berhasil di pasar tanah air,
+	namun sebagian dari Anda pasti ada yang memiliki handset dari brand ini.
+	Mengingat smartphone ini menjalanan OS Android, maka hal yang harus diingat bahwa
+	setiap smartphone Android memiliki batas waktu setidaknya 2 tahun untuk mendapatkan
+	update OS versi selanjutnya. Ini dapat dimengerti karena produsen Android lebih suka memfokuskan
+	sumber daya dan upaya mereka pada ponsel baru mereka, meskipun ini mengecewakan bagi mereka
+	yang lebih suka memegang ponsel mereka untuk jangka waktu yang lebih lama.
+    </p>
+	<h2></h2>
+	    <div class="img-container">
+      <!-- image is CC0 - no attribution required https://unsplash.com/photos/w9tHZ5fi3e4 -->
+      <img src="/images/sony.jpg" alt="Xperia">
+    </div>
+    <h2></h2>
+    <p>
+      Sementara beberapa perusahaan besar seperti Samsung dan LG sudah berlomba-lomba
+	  membuat perangkat dengan layar yang dapat dilipat, tampaknya Sony tak ingin ketinggalan
+	  berinovasi dengan membuat perangkat foldable miliknya sendiri.
+	  Hal ini diketahui dari sebuah rumor yang berasal dari Tiongkok.
+    </p>
+	<h2></h2>
+	<div class="img-container">
+      <!-- image is CC0 - no attribution required https://unsplash.com/photos/w9tHZ5fi3e4 -->
+      <img src="/images/htcc.jpg" alt="htchp">
+    </div>
+    <h2></h2>
+    <p>
+	HTC bukan pemain baru di pasar smartphone Android, namun belakangan ini penjualan smartphone
+	asal negara Taiwan tersebut tidak begitu baik. Selain kalah dengan smartphone murah dari Tiongkok,
+	HTC juga kesulitan mengimbangi dominasi raksasa Samsung, Apple, dan Huawei.
+	Kini ada kabar baik bagi Anda penggemar HTC yang sedang mencari smartphone mid-ranger
+	karena perusahaan baru saja mengumumkan smartphone kelas menengah baru yang bernama HTC U19e.
+    </p>
+  </main>
+  <footer>
+    <a href="#">Twitter</a>
+    <a href="#">Facebook</a>
+    <a href="#">Google+</a>
+  </footer>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('difa-sw.js')
+        .then(swReg => {
+          console.log('Service Worker is registered', swReg);
+        })
+        .catch(err => {
+          console.error('Service Worker Error', err);
+        });
+      });
+    }
+  </script>
+</body>
+</html>
